@@ -1,0 +1,46 @@
+main.java:
+package points;
+public class main {
+    public static void main(String[] args) {
+        System.out.println("Working with points");
+
+        points point1 = new points(1.0, 4.0);
+
+        point1.print();
+        System.out.println(point1.getx());
+        System.out.println(point1.gety());
+
+        point1.print();
+        point1.timesn(3);
+        point1.print();
+    }
+}
+
+points.java:
+package points;
+public class points {
+
+    //Fields
+    private double x = 0;
+    private double y = 0;
+
+    //Constructor
+    public points(double first, double second) {
+        x = first;
+        y = second;
+    }
+//Methods
+public void print() {
+    System.out.println("my point is (" + this.x + "," + this.y + ")");
+}
+public double getx(){
+    return this.x;
+}
+public double gety(){
+    return this.y;
+}
+public void timesn(int n){
+    this.x = this.x * n;
+    this.y = this.y * n; 
+}
+}

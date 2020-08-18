@@ -1,0 +1,51 @@
+<<Interface>> Regular Polygon
+    area()
+    perimeter()
+
+Abstract Shape
+    String color
+        getColor()
+        setColor()
+    Defined in sub classes
+        area()
+        perimeter()
+        toString()
+
+Circle
+    String color
+    double radius
+    also needs
+        area()
+        perimeter()
+        toString()
+
+Rectangle
+    width
+    height
+    color
+    Also needs:
+        area
+        perimeter
+        tostring()
+
+Square is a Rectangle
+Square is a Regular Polygon
+Square extends Rectangle and implements RegPoly
+    Super class
+    Fields
+        double side
+    Constructor
+        public Square(width, height, color)
+            Super(width, height, color);
+                Side = width
+    Methods
+
+Equilateral Triangle extends Shape implements RegularPolygon
+    Side
+    color
+    Also needs
+        area
+        perimeter
+        toString()
+
+
